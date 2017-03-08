@@ -228,9 +228,10 @@ namespace MPLobbyExample.Networking
         /// <summary>
         /// Initialize our singleton
         /// </summary>
+        /// CANT OVERRIDE THIS METHOD JUST YET BECAUSE OF UNITY BUG THAT IS FIXED IN 5.3.0
         //protected override void Awake()
         //{
-        //    CircuitNetworkManager.singleton = this;
+        //    MPNetworkManager.singleton = this;
         //}
 
         /// <summary>
@@ -689,8 +690,7 @@ namespace MPLobbyExample.Networking
                 MPNetworkPlayer player = connectedPlayers[i];
                 if (player != null)
                 {
-                    //TODO:Implement ready system for CircuitPlayer
-                    //player.ClearReady();
+                    player.ClearReady();
                 }
             }
         }

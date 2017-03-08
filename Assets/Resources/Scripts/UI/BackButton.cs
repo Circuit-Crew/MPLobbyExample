@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Circuit.UI
+namespace MPLobbyExample.UI
 {
     [RequireComponent(typeof(Button))]
 
